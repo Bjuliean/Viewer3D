@@ -1,0 +1,11 @@
+digraph "/mnt/d/WORKSPACE/viewer/CPP4_3DViewer_v2.0-1/src/model/renderer/shaders"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  compound=true
+  subgraph clusterdir_fe21176a7ba4502922a3081467fe2f38 {
+    graph [ bgcolor="#edf0f7", pencolor="grey50", style="filled,dashed,", label="renderer", fontname="Helvetica", fontsize="10", URL="dir_fe21176a7ba4502922a3081467fe2f38.html"]
+  dir_8680d909f7d962fb724f3a40a645deef [shape=box, label="shaders", style="filled,bold,", fillcolor="#edf0f7", color="grey25", URL="dir_8680d909f7d962fb724f3a40a645deef.html"];
+  }
+}

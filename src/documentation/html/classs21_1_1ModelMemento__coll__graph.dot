@@ -1,0 +1,15 @@
+digraph "s21::ModelMemento"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="s21::ModelMemento",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Class-cell for storing data."];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="s21::IMemento",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classs21_1_1IMemento.html",tooltip="An interface that allows you to save current transformations."];
+  Node3 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" buttons_data_" ,fontname="Helvetica"];
+  Node3 [label="s21::ButtonsData",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structs21_1_1ButtonsData.html",tooltip="Stores transformation data received from the user interface."];
+  Node4 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" matrix_data_" ,fontname="Helvetica"];
+  Node4 [label="s21::MatrixData",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structs21_1_1MatrixData.html",tooltip="Stores matrix data."];
+  Node5 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" matrix_transform_tools_" ,fontname="Helvetica"];
+  Node5 [label="s21::MatrixTransfromTools",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structs21_1_1MatrixTransfromTools.html",tooltip="Stores matrix transformation data."];
+}

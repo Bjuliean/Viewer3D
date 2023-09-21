@@ -1,0 +1,891 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>view</class>
+ <widget class="QMainWindow" name="view">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1965</width>
+    <height>1079</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>view</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="s21::Renderer" name="widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>-30</y>
+      <width>1966</width>
+      <height>1032</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="menu">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>1000</y>
+      <width>1961</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(50, 50, 50);
+
+border:0px;</string>
+    </property>
+    <property name="title">
+     <string/>
+    </property>
+    <widget class="QPushButton" name="pushButton_loadfile">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>1</y>
+       <width>71</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(181, 181, 181);
+color:rgb(80, 2, 2);</string>
+     </property>
+     <property name="text">
+      <string>LoadFile</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_reset">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>39</y>
+       <width>71</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(181, 181, 181);
+color:rgb(0, 0, 0);</string>
+     </property>
+     <property name="text">
+      <string>Reset</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_filename">
+     <property name="geometry">
+      <rect>
+       <x>1643</x>
+       <y>-4</y>
+       <width>63</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Filename:</string>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_totalvertices">
+     <property name="geometry">
+      <rect>
+       <x>1643</x>
+       <y>17</y>
+       <width>89</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Total Vertices:</string>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_totalindices">
+     <property name="geometry">
+      <rect>
+       <x>1643</x>
+       <y>37</y>
+       <width>95</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Total Polygons:</string>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comboBox_shader">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>1</y>
+       <width>131</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:rgb(0, 0, 0);
+background-color: rgb(181, 181, 181);</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>SimpleShader</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>AdvancedShader</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QComboBox" name="comboBox_projection">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>40</y>
+       <width>131</width>
+       <height>39</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:rgb(0, 0, 0);
+background-color: rgb(181, 181, 181);</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>Perspective</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Orthographic</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_filename_2">
+     <property name="geometry">
+      <rect>
+       <x>165</x>
+       <y>9</y>
+       <width>71</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Shader:</string>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_filename_3">
+     <property name="geometry">
+      <rect>
+       <x>165</x>
+       <y>47</y>
+       <width>71</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Projection:</string>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_loadtexture">
+     <property name="geometry">
+      <rect>
+       <x>71</x>
+       <y>1</y>
+       <width>71</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(181, 181, 181);
+color:rgb(80, 2, 2);</string>
+     </property>
+     <property name="text">
+      <string>LoadTexture</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_filename_4">
+     <property name="geometry">
+      <rect>
+       <x>1310</x>
+       <y>1</y>
+       <width>71</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Move x:</string>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_filename_5">
+     <property name="geometry">
+      <rect>
+       <x>1310</x>
+       <y>29</y>
+       <width>71</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Move y:</string>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_filename_6">
+     <property name="geometry">
+      <rect>
+       <x>1310</x>
+       <y>57</y>
+       <width>71</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Move z:</string>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QDoubleSpinBox" name="doubleSpinBox_movex">
+     <property name="geometry">
+      <rect>
+       <x>1369</x>
+       <y>1</y>
+       <width>62</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QDoubleSpinBox" name="doubleSpinBox_movey">
+     <property name="geometry">
+      <rect>
+       <x>1369</x>
+       <y>30</y>
+       <width>62</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QDoubleSpinBox" name="doubleSpinBox_movez">
+     <property name="geometry">
+      <rect>
+       <x>1369</x>
+       <y>58</y>
+       <width>62</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_filename_7">
+     <property name="geometry">
+      <rect>
+       <x>1453</x>
+       <y>1</y>
+       <width>71</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Rotate x:</string>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_filename_8">
+     <property name="geometry">
+      <rect>
+       <x>1453</x>
+       <y>29</y>
+       <width>71</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Rotate y:</string>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_filename_9">
+     <property name="geometry">
+      <rect>
+       <x>1453</x>
+       <y>57</y>
+       <width>71</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Rotate z:</string>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QDoubleSpinBox" name="doubleSpinBox_rotatex">
+     <property name="geometry">
+      <rect>
+       <x>1520</x>
+       <y>1</y>
+       <width>62</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QDoubleSpinBox" name="doubleSpinBox_rotatey">
+     <property name="geometry">
+      <rect>
+       <x>1520</x>
+       <y>30</y>
+       <width>62</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QDoubleSpinBox" name="doubleSpinBox_rotatez">
+     <property name="geometry">
+      <rect>
+       <x>1520</x>
+       <y>58</y>
+       <width>62</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_filename_19">
+     <property name="geometry">
+      <rect>
+       <x>402</x>
+       <y>9</y>
+       <width>91</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Vertices type:</string>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_filename_20">
+     <property name="geometry">
+      <rect>
+       <x>402</x>
+       <y>47</y>
+       <width>91</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Line type:</string>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comboBox_verticestype">
+     <property name="geometry">
+      <rect>
+       <x>510</x>
+       <y>1</y>
+       <width>131</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:rgb(0, 0, 0);
+background-color: rgb(181, 181, 181);</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>No</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Square</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Circle</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QComboBox" name="comboBox_linetype">
+     <property name="geometry">
+      <rect>
+       <x>510</x>
+       <y>40</y>
+       <width>131</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:rgb(0, 0, 0);
+background-color: rgb(181, 181, 181);</string>
+     </property>
+     <property name="currentIndex">
+      <number>2</number>
+     </property>
+     <item>
+      <property name="text">
+       <string>No</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Dotted</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Solid</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QPushButton" name="pushButton_verticescolor">
+     <property name="geometry">
+      <rect>
+       <x>710</x>
+       <y>1</y>
+       <width>120</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:rgb(60, 60, 60);
+color:rgb(225, 225, 225);</string>
+     </property>
+     <property name="text">
+      <string>Vertices Color</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_linescolor">
+     <property name="geometry">
+      <rect>
+       <x>710</x>
+       <y>26</y>
+       <width>120</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:rgb(60, 60, 60);
+color:rgb(225, 225, 225);</string>
+     </property>
+     <property name="text">
+      <string>Lines Color</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_backgroundcolor">
+     <property name="geometry">
+      <rect>
+       <x>710</x>
+       <y>51</y>
+       <width>120</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:rgb(60, 60, 60);
+color:rgb(0, 0, 0);</string>
+     </property>
+     <property name="text">
+      <string>Background Color</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_filenametext">
+     <property name="geometry">
+      <rect>
+       <x>1710</x>
+       <y>-5</y>
+       <width>253</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_filename_10">
+     <property name="geometry">
+      <rect>
+       <x>860</x>
+       <y>12</y>
+       <width>71</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Point size:</string>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QDoubleSpinBox" name="doubleSpinBox_pointsize">
+     <property name="geometry">
+      <rect>
+       <x>932</x>
+       <y>13</y>
+       <width>62</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="value">
+      <double>10.000000000000000</double>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_filename_11">
+     <property name="geometry">
+      <rect>
+       <x>860</x>
+       <y>43</y>
+       <width>71</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Line size:</string>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QDoubleSpinBox" name="doubleSpinBox_linesize">
+     <property name="geometry">
+      <rect>
+       <x>932</x>
+       <y>44</y>
+       <width>62</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="value">
+      <double>1.000000000000000</double>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_totalvertext">
+     <property name="geometry">
+      <rect>
+       <x>1732</x>
+       <y>17</y>
+       <width>253</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_totalpoltext">
+     <property name="geometry">
+      <rect>
+       <x>1738</x>
+       <y>36</y>
+       <width>253</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_totalindices_2">
+     <property name="geometry">
+      <rect>
+       <x>1643</x>
+       <y>60</y>
+       <width>91</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Texture path:</string>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_texturepath">
+     <property name="geometry">
+      <rect>
+       <x>1728</x>
+       <y>60</y>
+       <width>253</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_savescr">
+     <property name="geometry">
+      <rect>
+       <x>1009</x>
+       <y>12</y>
+       <width>120</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:rgb(181, 181, 181);
+color:rgb(0, 0, 0);</string>
+     </property>
+     <property name="text">
+      <string>Save Screenshot</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_savegif">
+     <property name="geometry">
+      <rect>
+       <x>1009</x>
+       <y>43</y>
+       <width>120</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:rgb(181, 181, 181);
+color:rgb(80, 2, 2);</string>
+     </property>
+     <property name="text">
+      <string>Save gif</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_savecfg">
+     <property name="geometry">
+      <rect>
+       <x>1140</x>
+       <y>1</y>
+       <width>120</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:rgb(181, 181, 181);
+color:rgb(0, 0, 0);</string>
+     </property>
+     <property name="text">
+      <string>Save Config</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_undocfg">
+     <property name="geometry">
+      <rect>
+       <x>1140</x>
+       <y>26</y>
+       <width>120</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:rgb(181, 181, 181);
+color:rgb(0, 0, 0);</string>
+     </property>
+     <property name="text">
+      <string>Backup Config</string>
+     </property>
+    </widget>
+    <widget class="QSpinBox" name="spinBox_backupindex">
+     <property name="geometry">
+      <rect>
+       <x>1265</x>
+       <y>24</y>
+       <width>31</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_deletecfg">
+     <property name="geometry">
+      <rect>
+       <x>1140</x>
+       <y>51</y>
+       <width>120</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:rgb(181, 181, 181);
+color:rgb(0, 0, 0);</string>
+     </property>
+     <property name="text">
+      <string>Delete Config</string>
+     </property>
+    </widget>
+    <widget class="QSpinBox" name="spinBox_deleteindex">
+     <property name="geometry">
+      <rect>
+       <x>1265</x>
+       <y>49</y>
+       <width>31</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_loadsettings">
+     <property name="geometry">
+      <rect>
+       <x>71</x>
+       <y>39</y>
+       <width>71</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+       <italic>false</italic>
+       <bold>false</bold>
+       <underline>false</underline>
+       <strikeout>false</strikeout>
+       <stylestrategy>PreferDefault</stylestrategy>
+       <kerning>true</kerning>
+      </font>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(181, 181, 181);
+color:rgb(0, 0, 0);</string>
+     </property>
+     <property name="text">
+      <string>Last Session</string>
+     </property>
+    </widget>
+    <zorder>pushButton_reset</zorder>
+    <zorder>pushButton_loadfile</zorder>
+    <zorder>lineEdit_filename</zorder>
+    <zorder>lineEdit_totalvertices</zorder>
+    <zorder>lineEdit_totalindices</zorder>
+    <zorder>comboBox_shader</zorder>
+    <zorder>comboBox_projection</zorder>
+    <zorder>lineEdit_filename_2</zorder>
+    <zorder>lineEdit_filename_3</zorder>
+    <zorder>pushButton_loadtexture</zorder>
+    <zorder>lineEdit_filename_4</zorder>
+    <zorder>lineEdit_filename_5</zorder>
+    <zorder>lineEdit_filename_6</zorder>
+    <zorder>doubleSpinBox_movex</zorder>
+    <zorder>doubleSpinBox_movey</zorder>
+    <zorder>doubleSpinBox_movez</zorder>
+    <zorder>lineEdit_filename_7</zorder>
+    <zorder>lineEdit_filename_8</zorder>
+    <zorder>lineEdit_filename_9</zorder>
+    <zorder>doubleSpinBox_rotatex</zorder>
+    <zorder>doubleSpinBox_rotatey</zorder>
+    <zorder>doubleSpinBox_rotatez</zorder>
+    <zorder>lineEdit_filename_19</zorder>
+    <zorder>lineEdit_filename_20</zorder>
+    <zorder>comboBox_verticestype</zorder>
+    <zorder>comboBox_linetype</zorder>
+    <zorder>pushButton_verticescolor</zorder>
+    <zorder>pushButton_linescolor</zorder>
+    <zorder>pushButton_backgroundcolor</zorder>
+    <zorder>lineEdit_filenametext</zorder>
+    <zorder>lineEdit_filename_10</zorder>
+    <zorder>doubleSpinBox_pointsize</zorder>
+    <zorder>lineEdit_filename_11</zorder>
+    <zorder>doubleSpinBox_linesize</zorder>
+    <zorder>lineEdit_totalvertext</zorder>
+    <zorder>lineEdit_totalpoltext</zorder>
+    <zorder>lineEdit_totalindices_2</zorder>
+    <zorder>lineEdit_texturepath</zorder>
+    <zorder>pushButton_savescr</zorder>
+    <zorder>pushButton_savegif</zorder>
+    <zorder>pushButton_savecfg</zorder>
+    <zorder>pushButton_undocfg</zorder>
+    <zorder>spinBox_backupindex</zorder>
+    <zorder>pushButton_deletecfg</zorder>
+    <zorder>spinBox_deleteindex</zorder>
+    <zorder>pushButton_loadsettings</zorder>
+   </widget>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>s21::Renderer</class>
+   <extends>QWidget</extends>
+   <header location="global">../model/renderer/renderer.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

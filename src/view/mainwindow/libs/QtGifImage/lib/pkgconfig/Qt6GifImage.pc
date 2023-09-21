@@ -1,0 +1,13 @@
+prefix=/usr/local
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/lib/QtGifImage.framework/Headers
+
+
+Name: Qt6 GifImage
+Description: Qt GifImage module
+Version: 0.1.0
+Libs: -F${libdir} -framework QtGifImage 
+Cflags: -DQT_GIFIMAGE_LIB -I${includedir} -F${libdir}
+Requires: Qt6Core Qt6Gui
+

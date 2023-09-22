@@ -35,13 +35,13 @@ you can view it by opening src/documentation/html/index.html.
 
 
 ## Examples
-
+- Some screenshots may not display correctly on mobile devices.
 ### --I--
 
 ![img](misc/1.png)
 ![img](misc/2.png)
 
-The program allows you to display an object in both perspective and horizontal projection.
+The program allows you to display an object in both perspective and orthographic projection.
 
 ### --II--
 
